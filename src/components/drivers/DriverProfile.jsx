@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Carousel, Col, Row, Image, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Carousel, Col, Row, Image } from 'react-bootstrap';
 
 import * as actions from '../../actions';
 import DriverRanking from '../rankings/DriverRanking';
@@ -40,7 +39,7 @@ class DriverProfile extends Component {
           </Col>
 
           <Col xs={8} md={{ offset: 3, span: 2 }}>
-            <Row as={Col} className='profileInfo' >
+            <Row as={Col} className='profileInfo'>
               <p>Global Score: {this.props.selectedDriver.globalScore}</p>
             </Row>
             <Row as={Col} className='profileInfo'>
@@ -48,6 +47,7 @@ class DriverProfile extends Component {
             </Row>
           </Col>
         </Row>
+
         <Row>
           <Col xs={12}>
             <Carousel>
@@ -59,8 +59,8 @@ class DriverProfile extends Component {
                   <DriverRanking selectedDriver={this.props.selectedDriver} />
                 </Col>
               </Carousel.Item>
-              {this.props.races.map((race) => (
-                <Carousel.Item>
+              {this.props.races.map((race, index) => (
+                <Carousel.Item key={index}>
                   <Col md={{ span: 7, offset: 5 }}>
                     <h2>{race.name}</h2>
                   </Col>

@@ -27,6 +27,16 @@ html {
   height: 30px;
 }
 
+.cardInfo {
+  height: 20px;
+}
+
+.cardBody {
+  width: 100%;
+  white-space: nowrap;
+  margin: 5px 0px 5px 0px;
+}
+
 .selectedDriver {
   font-weight: bold;
   background-color: #f12626 !important;

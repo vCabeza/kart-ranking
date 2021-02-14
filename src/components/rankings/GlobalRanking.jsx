@@ -42,14 +42,18 @@ class ClasificacionGlobal extends Component {
                     : ''
                 }>
                 <td>{index + 1}</td>
+
                 {this.props.isIndex ? (
-                  <OverlayTrigger
-                    placement='right'
-                    overlay={this.popover(driver)}>
-                    <Link to={'kart-ranking/driver/' + driver._id}>
-                      {driver.name}
-                    </Link>
-                  </OverlayTrigger>
+                  <td>
+                    <OverlayTrigger
+                      className='driverLink'
+                      placement='right'
+                      overlay={this.popover(driver)}>
+                      <Link to={'/kart-ranking/driver/' + driver._id}>
+                        {driver.name}
+                      </Link>
+                    </OverlayTrigger>
+                  </td>
                 ) : (
                   <td>{driver.name}</td>
                 )}

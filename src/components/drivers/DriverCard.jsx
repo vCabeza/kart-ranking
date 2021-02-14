@@ -1,24 +1,33 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'react-bootstrap';
+import { Card, Row, Col, Image } from 'react-bootstrap';
 
 class DriverCard extends Component {
   render() {
     return (
       <Card>
-        <Card.Img variant='top' src={this.props.driver.picture} />
-        <Card.Body>
-          <Card.Title>{this.props.driver.name}</Card.Title>
-          <Card.Text>
-            <p>Team: {this.props.driver.team}</p>
-          </Card.Text>
-          <Card.Text>
-            <p>Age: {this.props.driver.age}</p>
-          </Card.Text>
-          <Card.Text>
-            <p>Global Points: {this.props.driver.globalScore}</p>
-          </Card.Text>
-        </Card.Body>
+        <Row className='cardBody'>
+          <Col xs={3}>
+            <Image src={this.props.driver.picture} />
+          </Col>
+          <Col xs={9}>
+            <Row as={Col}>
+              <h5>{this.props.driver.name}</h5>
+            </Row>
+            <Row as={Col}>
+              <h6>Team {this.props.driver.team}</h6>
+            </Row>
+          </Col>
+
+          <Col xs={12}>
+            <Row as={Col} className='cardInfo'>
+              <p>Global Score: {this.props.driver.globalScore}</p>
+            </Row>
+            <Row as={Col} className='cardInfo'>
+              <p>Age: {this.props.driver.age}</p>
+            </Row>
+          </Col>
+        </Row>
       </Card>
     );
   }
