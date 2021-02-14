@@ -23,7 +23,7 @@ class DriverProfile extends Component {
     return (
       <>
         <Row>
-          <Col xs={3} md={1}>
+          <Col xs={3} md={{ offset: 1, span: 1 }}>
             <Image
               className='profilePicture'
               src={this.props.selectedDriver.picture}
@@ -39,11 +39,13 @@ class DriverProfile extends Component {
             </Row>
           </Col>
 
-          <Col xs={8} md={4}>
-            <Row as={Col}>
-              Global Score: {this.props.selectedDriver.globalScore}
+          <Col xs={8} md={{ offset: 3, span: 2 }}>
+            <Row as={Col} className='profileInfo' >
+              <p>Global Score: {this.props.selectedDriver.globalScore}</p>
             </Row>
-            <Row as={Col}>Age: {this.props.selectedDriver.age}</Row>
+            <Row as={Col} className='profileInfo'>
+              <p>Age: {this.props.selectedDriver.age}</p>
+            </Row>
           </Col>
         </Row>
         <Row>

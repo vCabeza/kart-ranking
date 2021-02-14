@@ -2,6 +2,10 @@
   background-color: rgb(233, 233, 233);
 }
 
+html {
+  background-color: rgb(233, 233, 233);
+}
+
 .header-container {
   background-color: #f12626;
 }
@@ -12,18 +16,21 @@
 
 .body-container {
   background-color: white;
-  margin-top: 3em;
+}
+
+.profilePicture {
+  position: absolute;
+  top: 15%;
+}
+
+.profileInfo {
+  height: 30px;
 }
 
 .selectedDriver {
   font-weight: bold;
   background-color: #f12626 !important;
   color: white;
-}
-
-.profilePicture {
-  position: absolute;
-  top: 15%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -34,5 +41,17 @@
   .profilePicture {
     position: absolute;
     top: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .profileInfo {
+    text-align: justify;
+    direction: rtl;
+    float: right;
+  }
+
+  .body-container {
+    margin-top: 3em;
   }
 }

@@ -46,7 +46,9 @@ class ClasificacionGlobal extends Component {
                   <OverlayTrigger
                     placement='right'
                     overlay={this.popover(driver)}>
-                    <Link to={'/driver/' + driver._id}>{driver.name}</Link>
+                    <Link to={'kart-ranking/driver/' + driver._id}>
+                      {driver.name}
+                    </Link>
                   </OverlayTrigger>
                 ) : (
                   <td>{driver.name}</td>
