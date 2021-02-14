@@ -22,7 +22,7 @@ class ClasificacionGlobal extends Component {
 
   render() {
     return (
-      <Table striped bordered>
+      <Table striped>
         <thead>
           <tr>
             <th>Position</th>
@@ -38,7 +38,7 @@ class ClasificacionGlobal extends Component {
                 key={index}
                 className={
                   !this.props.isIndex && driver.name === this.props.driverName
-                    ? 'bold'
+                    ? 'selectedDriver'
                     : ''
                 }>
                 <td>{index + 1}</td>

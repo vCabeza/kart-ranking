@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Carousel, Col, Row, Image } from 'react-bootstrap';
+import { Carousel, Col, Row, Image, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import * as actions from '../../actions';
 import DriverRanking from '../rankings/DriverRanking';
@@ -38,7 +39,7 @@ class DriverProfile extends Component {
             </Row>
           </Col>
 
-          <Col xs={12} md={4}>
+          <Col xs={8} md={4}>
             <Row as={Col}>
               Global Score: {this.props.selectedDriver.globalScore}
             </Row>
@@ -49,24 +50,36 @@ class DriverProfile extends Component {
           <Col xs={12}>
             <Carousel>
               <Carousel.Item>
-                <h2>Personal Ranking</h2>
-                <DriverRanking selectedDriver={this.props.selectedDriver} />
+                <Col md={{ span: 8, offset: 4 }}>
+                  <h2>Personal Ranking</h2>
+                </Col>
+                <Col md={{ span: 10, offset: 1 }}>
+                  <DriverRanking selectedDriver={this.props.selectedDriver} />
+                </Col>
               </Carousel.Item>
               {this.props.races.map((race) => (
                 <Carousel.Item>
-                  <h2>{race.name}</h2>
-                  <RaceRanking
-                    race={race}
-                    driverName={this.props.selectedDriver.name}
-                  />
+                  <Col md={{ span: 7, offset: 5 }}>
+                    <h2>{race.name}</h2>
+                  </Col>
+                  <Col md={{ span: 10, offset: 1 }}>
+                    <RaceRanking
+                      race={race}
+                      driverName={this.props.selectedDriver.name}
+                    />
+                  </Col>
                 </Carousel.Item>
               ))}
               <Carousel.Item>
-                <h2>Global Ranking</h2>
-                <ClasificacionGlobal
-                  isIndex={false}
-                  driverName={this.props.selectedDriver.name}
-                />
+                <Col md={{ span: 8, offset: 4 }}>
+                  <h2>Global Ranking</h2>
+                </Col>
+                <Col md={{ span: 10, offset: 1 }}>
+                  <ClasificacionGlobal
+                    isIndex={false}
+                    driverName={this.props.selectedDriver.name}
+                  />
+                </Col>
               </Carousel.Item>
             </Carousel>
           </Col>

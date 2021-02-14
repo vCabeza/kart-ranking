@@ -1,5 +1,24 @@
-.bold {
+.App {
+  background-color: rgb(233, 233, 233);
+}
+
+.header-container {
+  background-color: #f12626;
+}
+
+.header-container a {
+  color: white;
+}
+
+.body-container {
+  background-color: white;
+  margin-top: 3em;
+}
+
+.selectedDriver {
   font-weight: bold;
+  background-color: #f12626 !important;
+  color: white;
 }
 
 .profilePicture {
@@ -13,7 +32,7 @@
   }
 
   .profilePicture {
-  position: absolute;
-  top: 30%;
-}
+    position: absolute;
+    top: 30%;
+  }
 }

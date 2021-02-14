@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 class RaceRanking extends Component {
   render() {
     return (
-      <Table striped bordered hover>
+      <Table striped>
         <thead>
           <tr>
             <th>Position</th>
@@ -18,7 +18,9 @@ class RaceRanking extends Component {
             this.props.race.driversScore.map((driver, index) => (
               <tr
                 key={index}
-                className={driver.name === this.props.driverName ? 'bold' : ''}>
+                className={
+                  driver.name === this.props.driverName ? 'selectedDriver' : ''
+                }>
                 <td>{index + 1}</td>
                 <td>{driver.name}</td>
                 <td>{driver.time}</td>

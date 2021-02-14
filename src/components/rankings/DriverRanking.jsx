@@ -15,7 +15,7 @@ class DriverRanking extends Component {
 
   render() {
     return (
-      <Table striped bordered hover>
+      <Table striped>
         <thead>
           <tr>
             <th>Race</th>
