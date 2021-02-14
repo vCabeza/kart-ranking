@@ -38,7 +38,7 @@ class DriverProfile extends Component {
             </Row>
           </Col>
 
-          <Col xs={8} md={{ offset: 3, span: 2 }}>
+          <Col xs={8} md={{ offset: 3, span: 2 }} style={{ marginTop: '20px' }}>
             <Row as={Col} className='profileInfo'>
               <p>Global Score: {this.props.selectedDriver.globalScore}</p>
             </Row>
@@ -50,7 +50,7 @@ class DriverProfile extends Component {
 
         <Row>
           <Col xs={12}>
-            <Carousel>
+            <Carousel variant='dark' interval={3000} indicators={false}>
               <Carousel.Item>
                 <Col md={{ span: 8, offset: 4 }}>
                   <h2>Personal Ranking</h2>

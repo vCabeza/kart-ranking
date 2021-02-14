@@ -43,6 +43,11 @@ html {
   color: white;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
 @media only screen and (max-width: 600px) {
   .table {
     font-size: x-small;
@@ -63,5 +68,25 @@ html {
 
   .body-container {
     margin-top: 3em;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 8%;
+    opacity: 10;
+  }
+
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .carousel-control-next span,
+  .carousel-control-prev span {
+    height: 40px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: #f12626 !important;
   }
 }
