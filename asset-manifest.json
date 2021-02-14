@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/kart-ranking/static/css/main.fa5d42d8.chunk.css",
-    "main.js": "/kart-ranking/static/js/main.a8890770.chunk.js",
-    "main.js.map": "/kart-ranking/static/js/main.a8890770.chunk.js.map",
+    "main.js": "/kart-ranking/static/js/main.4f93affa.chunk.js",
+    "main.js.map": "/kart-ranking/static/js/main.4f93affa.chunk.js.map",
     "runtime-main.js": "/kart-ranking/static/js/runtime-main.80e2542e.js",
     "runtime-main.js.map": "/kart-ranking/static/js/runtime-main.80e2542e.js.map",
     "static/css/2.150d169a.chunk.css": "/kart-ranking/static/css/2.150d169a.chunk.css",
-    "static/js/2.583f2b09.chunk.js": "/kart-ranking/static/js/2.583f2b09.chunk.js",
-    "static/js/2.583f2b09.chunk.js.map": "/kart-ranking/static/js/2.583f2b09.chunk.js.map",
+    "static/js/2.a0be650e.chunk.js": "/kart-ranking/static/js/2.a0be650e.chunk.js",
+    "static/js/2.a0be650e.chunk.js.map": "/kart-ranking/static/js/2.a0be650e.chunk.js.map",
     "index.html": "/kart-ranking/index.html",
     "static/css/2.150d169a.chunk.css.map": "/kart-ranking/static/css/2.150d169a.chunk.css.map",
     "static/css/main.fa5d42d8.chunk.css.map": "/kart-ranking/static/css/main.fa5d42d8.chunk.css.map",
-    "static/js/2.583f2b09.chunk.js.LICENSE.txt": "/kart-ranking/static/js/2.583f2b09.chunk.js.LICENSE.txt"
+    "static/js/2.a0be650e.chunk.js.LICENSE.txt": "/kart-ranking/static/js/2.a0be650e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.80e2542e.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.583f2b09.chunk.js",
+    "static/js/2.a0be650e.chunk.js",
     "static/css/main.fa5d42d8.chunk.css",
-    "static/js/main.a8890770.chunk.js"
+    "static/js/main.4f93affa.chunk.js"
   ]
 }
