@@ -22,7 +22,7 @@ class ClasificacionGlobal extends Component {
 
   render() {
     return (
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>Position</th>
@@ -34,7 +34,13 @@ class ClasificacionGlobal extends Component {
         <tbody>
           {this.props.drivers &&
             this.props.drivers.map((driver, index) => (
-              <tr key={index}>
+              <tr
+                key={index}
+                className={
+                  !this.props.isIndex && driver.name === this.props.driverName
+                    ? 'bold'
+                    : ''
+                }>
                 <td>{index + 1}</td>
                 {this.props.isIndex ? (
                   <OverlayTrigger
@@ -59,6 +65,7 @@ class ClasificacionGlobal extends Component {
 ClasificacionGlobal.propTypes = {
   drivers: PropTypes.array,
   isIndex: PropTypes.bool,
+  driverName: PropTypes.string,
 };
 
 const mapStateToProps = (state) => {

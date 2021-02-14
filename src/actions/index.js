@@ -63,7 +63,6 @@ function updateScores(race, points) {
     const driverScore = race.driversScore[i];
     const index = drivers.findIndex((driver) => driver._id === driverScore.id);
     drivers[index].globalScore += points[i];
-    drivers[index].position = i + 1;
   }
 }
 

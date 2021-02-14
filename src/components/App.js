@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Container>
+        <Container fluid='md'>
           <Route exact path='/' component={Index} />
           <Route exact path={`/driver/:driverId`} component={DriverProfile} />
         </Container>
