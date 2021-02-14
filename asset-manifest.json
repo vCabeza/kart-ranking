@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kart-ranking/static/css/main.fa5d42d8.chunk.css",
-    "main.js": "/kart-ranking/static/js/main.7d924fbb.chunk.js",
-    "main.js.map": "/kart-ranking/static/js/main.7d924fbb.chunk.js.map",
+    "main.css": "/kart-ranking/static/css/main.0bef4dea.chunk.css",
+    "main.js": "/kart-ranking/static/js/main.f29eb26b.chunk.js",
+    "main.js.map": "/kart-ranking/static/js/main.f29eb26b.chunk.js.map",
     "runtime-main.js": "/kart-ranking/static/js/runtime-main.80e2542e.js",
     "runtime-main.js.map": "/kart-ranking/static/js/runtime-main.80e2542e.js.map",
     "static/css/2.150d169a.chunk.css": "/kart-ranking/static/css/2.150d169a.chunk.css",
-    "static/js/2.a0be650e.chunk.js": "/kart-ranking/static/js/2.a0be650e.chunk.js",
-    "static/js/2.a0be650e.chunk.js.map": "/kart-ranking/static/js/2.a0be650e.chunk.js.map",
+    "static/js/2.160a754b.chunk.js": "/kart-ranking/static/js/2.160a754b.chunk.js",
+    "static/js/2.160a754b.chunk.js.map": "/kart-ranking/static/js/2.160a754b.chunk.js.map",
     "index.html": "/kart-ranking/index.html",
     "static/css/2.150d169a.chunk.css.map": "/kart-ranking/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.fa5d42d8.chunk.css.map": "/kart-ranking/static/css/main.fa5d42d8.chunk.css.map",
-    "static/js/2.a0be650e.chunk.js.LICENSE.txt": "/kart-ranking/static/js/2.a0be650e.chunk.js.LICENSE.txt"
+    "static/css/main.0bef4dea.chunk.css.map": "/kart-ranking/static/css/main.0bef4dea.chunk.css.map",
+    "static/js/2.160a754b.chunk.js.LICENSE.txt": "/kart-ranking/static/js/2.160a754b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.80e2542e.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.a0be650e.chunk.js",
-    "static/css/main.fa5d42d8.chunk.css",
-    "static/js/main.7d924fbb.chunk.js"
+    "static/js/2.160a754b.chunk.js",
+    "static/css/main.0bef4dea.chunk.css",
+    "static/js/main.f29eb26b.chunk.js"
   ]
 }
