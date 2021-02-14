@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kart-ranking/static/css/main.fa5d42d8.chunk.css",
-    "main.js": "/kart-ranking/static/js/main.0f4fcefa.chunk.js",
-    "main.js.map": "/kart-ranking/static/js/main.0f4fcefa.chunk.js.map",
+    "main.js": "/kart-ranking/static/js/main.a8890770.chunk.js",
+    "main.js.map": "/kart-ranking/static/js/main.a8890770.chunk.js.map",
     "runtime-main.js": "/kart-ranking/static/js/runtime-main.80e2542e.js",
     "runtime-main.js.map": "/kart-ranking/static/js/runtime-main.80e2542e.js.map",
     "static/css/2.150d169a.chunk.css": "/kart-ranking/static/css/2.150d169a.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.583f2b09.chunk.js",
     "static/css/main.fa5d42d8.chunk.css",
-    "static/js/main.0f4fcefa.chunk.js"
+    "static/js/main.a8890770.chunk.js"
   ]
 }
